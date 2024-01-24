@@ -22,6 +22,11 @@ app.get("/", (req, res) => {
   res.status(200).send("backend connected success");
 });
 
+app.get("/testapi", (req, res) => {
+  res.status(200).send("backend working");
+});
+
+
 
 const port = process.env.PORT | 4000;
 server.listen(port, () => {
